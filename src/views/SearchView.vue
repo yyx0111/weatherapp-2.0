@@ -1,20 +1,22 @@
 <template>
   <div>
     <div class="header">
-      <van-nav-bar left-text="返回" left-arrow  @click-left="$router.go(-1)" style="height: 54px;">
-        <template #right>
-          <van-search
-              v-model="value"
-              show-action
-              placeholder="请输入搜索地址"
-              @search="onSearch"
-          >
-            <template #action>
-              <div @click="onSearch">搜索</div>
-            </template>
-          </van-search>
-        </template>
-      </van-nav-bar>
+      <v-card>
+            <van-nav-bar left-text="返回" left-arrow  @click-left="$router.go(-1)" style="height: 54px;">
+              <template #right>
+                <van-search
+                    v-model="value"
+                    show-action
+                    placeholder="请输入搜索地址"
+                    @search="onSearch"
+                >
+                  <template #action>
+                    <div @click="onSearch">搜索</div>
+                  </template>
+                </van-search>
+              </template>
+            </van-nav-bar>
+      </v-card>
     </div>
     <div v-if="show">
       <SearchCop :location="location"></SearchCop>

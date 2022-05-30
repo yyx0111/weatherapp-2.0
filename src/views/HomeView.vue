@@ -7,7 +7,7 @@
           shrink-on-scroll
           src="@/assets/bg.jpg"
           scroll-target="#scrolling-techniques-2"
-          height="29px"
+          height="35px"
       >
         <template v-slot:img="{ props }">
           <v-img
@@ -45,7 +45,7 @@
           class="overflow-y-auto"
           max-height="844"
       >
-        <v-container style="height: 920px;padding: 0">
+        <v-container style="height: 930px;padding: 0">
           <v-tabs-items v-model="tab">
            <v-tab-item>
              <div class="bg" style="height: 920px;margin-top: 125px;">
