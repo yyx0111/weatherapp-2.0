@@ -1,8 +1,8 @@
 <template>
   <div class="bg">
-    <Weather :location="location"></Weather>
-    <FutureWeather :location="location"></FutureWeather>
-    <WeatherDetail :location="location"></WeatherDetail>
+      <Weather :location="location"></Weather>
+      <FutureWeather :location="location"></FutureWeather>
+      <WeatherDetail :location="location"></WeatherDetail>
   </div>
 </template>
 
