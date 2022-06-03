@@ -37,9 +37,9 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  base: window.__POWERED_BY_QIANKUN__ ? '/vue-2' : '/',
   mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+  routes,
 })
 
 export default router
